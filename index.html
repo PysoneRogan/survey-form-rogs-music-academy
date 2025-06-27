@@ -1,0 +1,154 @@
+<html><head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center" style="font-family: 'Playfair Display', serif; font-size: 400%;">Rog's Music Academy</h1>
+        <p id="description" class="description text-center" >
+          A Western music tradition
+        </p>
+        <br>
+        <hr>
+        <br>
+        <p id="description" class="description text-center" style="font-size: 125%;">
+          Thank you for taking the time to help us improve the tutorial
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Rog's Music Academy to a friend?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of tutorial?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="work shop">Work Shop</option>
+            <option value="grade music">Grade Music</option>
+            <option value="community">Community</option>
+            <option value="concert">Concert</option>
+            <option value="friendly tutors">Friendly Tutors</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved at our Music Academy?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="accommodation" type="checkbox" class="input-checkbox">Accommodation</label>
+          <label><input name="prefer" value="instrument services" type="checkbox" class="input-checkbox">Instrument Services</label>
+          <label><input name="prefer" value="theory of music" type="checkbox" class="input-checkbox">Theory of Music</label>
+          <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+          <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community</label>
+          <label><input name="prefer" value="tutor's behaviour" type="checkbox" class="input-checkbox">Tutor's behaviour</label>
+          <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos</label>
+          <label><input name="prefer" value="concert" type="checkbox" class="input-checkbox">Concert</label>
+          <label><input name="prefer" value="cleanliness" type="checkbox" class="input-checkbox">Cleanliness</label>
+          <label><input name="prefer" value="loud music control" type="checkbox" class="input-checkbox">Loud Music Control</label>
+          <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which music instrument would you love to play?
+            <span class="clue">(Whether know to play or not)</span>
+          </p>
+
+          <label><input name="instruments" value="piano" type="checkbox" class="input-checkbox">Piano</label>
+          <label><input name="instruments" value="guitar" type="checkbox" class="input-checkbox">Guitar</label>
+          <label><input name="instruments" value="keyboard" type="checkbox" class="input-checkbox">Keyboard</label>
+          <label><input name="instruments" value="violin" type="checkbox" class="input-checkbox">Violin</label>
+          <label><input name="instruments" value="ukelin" type="checkbox" class="input-checkbox">Ukelin</label>
+          <label><input name="instruments" value="drum pad" type="checkbox" class="input-checkbox">Drums / Drum Pad</label>
+          <label><input name="instruments" value="organ" type="checkbox" class="input-checkbox">Organ</label>
+          <label><input name="instruments" value="harmonium" type="checkbox" class="input-checkbox">Harmonium</label>
+          <label><input name="instruments" value="trumpet" type="checkbox" class="input-checkbox">Trumpet</label>
+          <label><input name="instruments" value="clarinet/saxophone" type="checkbox" class="input-checkbox">Clarinet / Saxophone</label>
+          <label><input name="instruments" value="additional-courses" type="checkbox" class="input-checkbox">Flute</label>
+        </div>
+
+        <div class="form-group">
+          <p>Feel free to reach out to us!</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <br>
+    <hr class="container">
+    <br>
+     <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: contact@rogsmusicacademy.com</p>
+        <p>Phone: +91 98005 02000</p>
+        <p>Address: 123, Ph Road, Chennai, Tamil Nadu, India</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="#" style="color:yellow;">About Us</a> 
+        <span>|</span>
+        <a href="#" style="color:yellow;">Support</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <a href="#" style="color:pink;">Facebook</a>
+        <span>|</span>
+        <a href="#" style="color:pink;">Twitter</a>
+        <span>|</span>
+        <a href="#" style="color:pink;">Instagram</a>
+        <span>|</span>
+        <a href="#" style="color:pink;">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Rog's Music Academy. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
